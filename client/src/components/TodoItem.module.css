@@ -1,0 +1,124 @@
+.item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  background: #fff;
+  border-radius: 10px;
+  margin-bottom: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.2s, opacity 0.2s;
+  cursor: grab;
+}
+
+.item:active {
+  cursor: grabbing;
+}
+
+.item.completed .title {
+  text-decoration: line-through;
+  color: #9ca3af;
+}
+
+.dragHandle {
+  color: #d1d5db;
+  font-size: 1rem;
+  cursor: grab;
+  user-select: none;
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+  accent-color: #4f46e5;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.content {
+  flex: 1;
+  min-width: 0;
+}
+
+.title {
+  font-size: 0.95rem;
+  font-weight: 500;
+  word-break: break-word;
+}
+
+.meta {
+  display: flex;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.category {
+  font-size: 0.75rem;
+  padding: 2px 8px;
+  background: #e0e7ff;
+  color: #4338ca;
+  border-radius: 12px;
+}
+
+.priority {
+  font-size: 0.75rem;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-weight: 600;
+}
+
+.high {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.medium {
+  background: #fef3c7;
+  color: #d97706;
+}
+
+.low {
+  background: #d1fae5;
+  color: #059669;
+}
+
+.actions {
+  display: flex;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+.editBtn,
+.deleteBtn {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background 0.2s;
+}
+
+.editBtn {
+  background: #f3f4f6;
+  color: #6b7280;
+}
+
+.editBtn:hover {
+  background: #e5e7eb;
+  color: #4f46e5;
+}
+
+.deleteBtn {
+  background: #f3f4f6;
+  color: #6b7280;
+  font-size: 1.3rem;
+}
+
+.deleteBtn:hover {
+  background: #fee2e2;
+  color: #dc2626;
+}

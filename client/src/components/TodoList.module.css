@@ -1,0 +1,10 @@
+.list {
+  margin-top: 8px;
+}
+
+.empty {
+  text-align: center;
+  color: #9ca3af;
+  padding: 40px 20px;
+  font-size: 0.95rem;
+}

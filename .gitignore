@@ -1,0 +1,7 @@
+node_modules/
+client/dist/
+server/todos.db
+server/todos.db-shm
+server/todos.db-wal
+*.log
+.DS_Store
